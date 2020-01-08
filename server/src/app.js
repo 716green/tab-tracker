@@ -8,5 +8,29 @@
 // // /client/$ npm run dev
 // // /server/$ npm start
 
-console.log('hello');
-const express = require('express');
+//https://youtu.be/Fa4cRMaTDUI?t=1955 (I get error, lesson doesn't)
+
+//console.log('hello')
+const express = require('express')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const morgan = require('morgan')
+
+//const connect = require('connect')
+const app = express()
+//app.use(connect())
+
+app.use(morgan('combine'))
+app.use(bodyParser.json())
+app.use(cors())
+
+
+
+
+app.get('/status', (req, res) => {
+  res.send({
+    message: 'hello world!'
+  })
+})
+
+app.listen(process.env.PORT || 8081)
