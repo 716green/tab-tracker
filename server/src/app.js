@@ -1,3 +1,9 @@
+/*
+
+This tutorial is the wrong versions of many packages and no longer works. This is too advanced for my current skill level.
+I am ditching this lesson to start at a diffent lesson
+
+*/
 // WAS:
     // "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
     // "lint": "./node_modules/.bin/eslint */**.js"
